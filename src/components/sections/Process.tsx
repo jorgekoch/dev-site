@@ -5,8 +5,7 @@ export function Process() {
   return (
     <section className="process" aria-labelledby="process-title">
       <SectionLabel>04 — Como eu trabalho</SectionLabel>
-      <h2 id="process-title" className="sr-only">Processo de trabalho</h2>
-      <div className="process-grid">
+      <div className="process-grid" id="process-title">
         {processSteps.map(([number, title, text]) => (
           <article key={number} className="process-item">
             <span>{number}</span>
